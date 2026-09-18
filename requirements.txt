@@ -1,0 +1,8 @@
+# Compatible dependency ranges for the default offline reproduction workflow.
+# The exact versions used for the release verification are recorded in requirements-lock.txt.
+numpy>=1.26,<3
+pandas>=2.1,<3
+scipy>=1.11,<2
+statsmodels>=0.14,<0.15
+scikit-learn>=1.3,<2
+matplotlib>=3.8,<4

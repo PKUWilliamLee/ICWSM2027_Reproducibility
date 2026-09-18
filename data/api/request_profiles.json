@@ -1,0 +1,217 @@
+{
+  "M0": {
+    "task": "simulation",
+    "architecture_id": "M0",
+    "api_key_env": "DEEPSEEK_API_KEY_SIMULATION",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/simulation_prompt_template_M0_M2_v5.txt",
+    "body": {
+      "model": "deepseek-v4-pro",
+      "max_tokens": 4096,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "reasoning_effort": "high",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "source": "M1A v4 request-envelope builder and API contract v5; used for M-series and P-series M1 requests."
+  },
+  "M1": {
+    "task": "simulation",
+    "architecture_id": "M1",
+    "api_key_env": "DEEPSEEK_API_KEY_SIMULATION",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/simulation_prompt_template_M0_M2_v5.txt",
+    "body": {
+      "model": "deepseek-v4-pro",
+      "max_tokens": 4096,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "reasoning_effort": "high",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "source": "M1A v4 request-envelope builder and API contract v5; used for M-series and P-series M1 requests."
+  },
+  "M2": {
+    "task": "simulation",
+    "architecture_id": "M2",
+    "api_key_env": "DEEPSEEK_API_KEY_SIMULATION",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/simulation_prompt_template_M0_M2_v5.txt",
+    "body": {
+      "model": "deepseek-v4-pro",
+      "max_tokens": 4096,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "reasoning_effort": "high",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "source": "M1A v4 request-envelope builder and API contract v5; used for M-series and P-series M1 requests."
+  },
+  "M3": {
+    "task": "simulation",
+    "architecture_id": "M3",
+    "api_key_env": "DEEPSEEK_API_KEY_SIMULATION",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/simulation_prompt_template_M3_v5.txt",
+    "body": {
+      "model": "deepseek-v4-pro",
+      "max_tokens": 6144,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "reasoning_effort": "high",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "source": "M1A v4 request-envelope builder and API contract v5; used for M-series and P-series M1 requests."
+  },
+  "deepseek-v4-pro": {
+    "task": "relevance",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/relevance_system_zh.txt",
+    "body": {
+      "model": "deepseek-v4-pro",
+      "temperature": 0.0,
+      "max_tokens": 800,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "source": "Final relevance notebook configuration. The DeepSeek thinking/default configuration did not send an explicit thinking switch."
+  },
+  "deepseek-v4-pro-no-thinking": {
+    "task": "relevance",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/relevance_system_zh.txt",
+    "body": {
+      "model": "deepseek-v4-pro",
+      "temperature": 0.0,
+      "max_tokens": 500,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "source": "Final relevance notebook configuration. The DeepSeek thinking/default configuration did not send an explicit thinking switch."
+  },
+  "qwen3.7-plus-no-thinking": {
+    "task": "relevance",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/relevance_system_zh.txt",
+    "body": {
+      "model": "qwen3.7-plus",
+      "temperature": 0.0,
+      "max_tokens": 500,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "enable_thinking": false
+    },
+    "source": "Final relevance notebook configuration. The DeepSeek thinking/default configuration did not send an explicit thinking switch."
+  },
+  "qwen3.6-plus-no-thinking": {
+    "task": "relevance",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/relevance_system_zh.txt",
+    "body": {
+      "model": "qwen3.6-plus",
+      "temperature": 0.0,
+      "max_tokens": 500,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "enable_thinking": false
+    },
+    "source": "Final relevance notebook configuration. The DeepSeek thinking/default configuration did not send an explicit thinking switch."
+  },
+  "qwen3.6-flash-no-thinking": {
+    "task": "relevance",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/relevance_system_zh.txt",
+    "body": {
+      "model": "qwen3.6-flash",
+      "temperature": 0.0,
+      "max_tokens": 500,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "enable_thinking": false
+    },
+    "source": "Final relevance notebook configuration. The DeepSeek thinking/default configuration did not send an explicit thinking switch."
+  },
+  "glm-5.1-no-thinking": {
+    "task": "relevance",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "timeout_seconds": 300,
+    "system_file": "data/prompts/relevance_system_zh.txt",
+    "body": {
+      "model": "glm-5.1",
+      "temperature": 0.0,
+      "max_tokens": 500,
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      },
+      "enable_thinking": false
+    },
+    "source": "Final relevance notebook configuration. The DeepSeek thinking/default configuration did not send an explicit thinking switch."
+  },
+  "profile_query": {
+    "task": "query",
+    "api_key_env": "DEEPSEEK_API_KEY_SIMULATION",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 120,
+    "system_file": "data/prompts/query_system_zh.txt",
+    "body": {
+      "model": "deepseek-v4-flash",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 1024,
+      "stream": false,
+      "response_format": {
+        "type": "json_object",
+        "strict_local_schema_validation_required": true
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "source": "D1.3A query v8; max_tokens=1024 from the executed notebook, which overrides the older contract limit."
+  }
+}

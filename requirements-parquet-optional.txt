@@ -1,0 +1,2 @@
+# Only needed to inspect the original frozen Parquet response tables.
+pyarrow

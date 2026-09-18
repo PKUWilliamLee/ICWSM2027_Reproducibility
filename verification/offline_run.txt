@@ -1,0 +1,33 @@
+
+=== verify_utils.py ===
+{
+  "checked_files": 64,
+  "mismatches": 0
+}
+
+=== validate_saved_texts.py ===
+Saved generated texts match all three original embedding-corpus fingerprints.
+
+=== fit_itsa.py ===
+term_rows_expected           1.960000e+02
+term_rows_matched            1.960000e+02
+max_abs_coefficient_diff     6.439294e-15
+max_abs_se_diff              5.384582e-15
+effect_rows_expected         1.960000e+02
+effect_rows_matched          1.960000e+02
+max_abs_effect_pp_diff       3.268497e-13
+max_abs_effect_se_pp_diff    5.879741e-13
+
+=== recompute_validation.py ===
+Table 4 accuracy and historical latency recalculated from saved per-request records.
+
+=== recompute_simulations.py ===
+Tables 3, 13, 14 and Figure 4 numerical inputs recomputed and checked.
+
+=== build_tables.py ===
+Tables 2 and 5-12 prepared; empirical figure inputs use the current fit.
+
+=== make_figures.py ===
+Figures written to <repository>/outputs/figures
+
+Offline numerical reproduction completed successfully. No API requests were made.

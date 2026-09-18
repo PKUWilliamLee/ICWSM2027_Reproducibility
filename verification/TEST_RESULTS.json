@@ -1,0 +1,33 @@
+{
+  "release": "v3",
+  "python": "3.13.5",
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "statsmodels": "0.14.6",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "api_unit_tests": {
+    "run": 22,
+    "failures": 0,
+    "errors": 0,
+    "transport": "mocked"
+  },
+  "notebook_code_cells_executed": 4,
+  "notebook_default_network_calls": 0,
+  "dummy_keys_set_during_default_tests": true,
+  "numerical_pipeline_network_guard": "socket connect/create_connection blocked in process and children",
+  "network_attempts_observed": 0,
+  "numerical_status": "offline_numerical_checks_passed",
+  "csv_prepared_plan_conversion_and_dry_run": "passed",
+  "original_frozen_parquet_and_reference_bytes": "unchanged",
+  "not_tested": [
+    "Live provider requests, credentials and current model availability",
+    "Fresh network dependency installation",
+    "Windows native execution",
+    "Full local BGE inference",
+    "Full privacy/redistribution assessment of original retained binary outputs"
+  ]
+}

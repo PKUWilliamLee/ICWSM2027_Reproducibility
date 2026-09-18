@@ -1,0 +1,23 @@
+{
+  "m": {
+    "rows": 2000,
+    "file": "data/frozen_api_outputs/m_generated_text.csv",
+    "index": "data/semantic/m_generated_index.csv",
+    "text_join": "normalize_whitespace(title) + newline + normalize_whitespace(content)",
+    "corpus_sha256": "AAB6329D5E2CEE71327D8E2E1B278AE68CED65AD3DD8123FF6AC46DC09642170"
+  },
+  "p3": {
+    "rows": 4500,
+    "file": "data/frozen_api_outputs/p3_generated_text.csv",
+    "index": "data/semantic/p3_index.csv",
+    "text_join": "title + newline + content",
+    "corpus_sha256": "DF08A0F8D025A087E5A96BACB2C9E0CC6C05FF0C4D8463F8E2F34F12C10BF50E"
+  },
+  "p1": {
+    "rows": 2000,
+    "file": "data/frozen_api_outputs/p1_generated_text.csv",
+    "index": "data/semantic/p1_index_N200.csv",
+    "text_join": "title + newline + content",
+    "corpus_sha256": "61943A5CC22DB2617C4806DBCE6809176D5F647C888EAC6EE559F244E228FD30"
+  }
+}

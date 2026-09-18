@@ -1,0 +1,51 @@
+{
+  "mode": "dry_run",
+  "network_calls": 0,
+  "logical_rows": 4,
+  "unique_requests": 4,
+  "request_profiles": [
+    "M0",
+    "M1",
+    "M2",
+    "M3"
+  ],
+  "credential_environment_names": [
+    "DEEPSEEK_API_KEY_SIMULATION"
+  ],
+  "plan_sha256": "d9790775595ac1b6d38e9994129150bd427fa8a89b04aa7ac0506f76bb319fc3",
+  "message": "Prepared locally. No credentials were read; no HTTP request was sent."
+}
+{
+  "mode": "dry_run",
+  "network_calls": 0,
+  "logical_rows": 6,
+  "unique_requests": 6,
+  "request_profiles": [
+    "deepseek-v4-pro",
+    "deepseek-v4-pro-no-thinking",
+    "glm-5.1-no-thinking",
+    "qwen3.6-flash-no-thinking",
+    "qwen3.6-plus-no-thinking",
+    "qwen3.7-plus-no-thinking"
+  ],
+  "credential_environment_names": [
+    "DASHSCOPE_API_KEY",
+    "DEEPSEEK_API_KEY"
+  ],
+  "plan_sha256": "14793d129571f5885a56bc1eb18dfdf5734667fe051f55b4d030fa552093aea7",
+  "message": "Prepared locally. No credentials were read; no HTTP request was sent."
+}
+{
+  "mode": "dry_run",
+  "network_calls": 0,
+  "logical_rows": 1,
+  "unique_requests": 1,
+  "request_profiles": [
+    "profile_query"
+  ],
+  "credential_environment_names": [
+    "DEEPSEEK_API_KEY_SIMULATION"
+  ],
+  "plan_sha256": "a3ec2a54b803a3de6d096fb5170f29642e122ecfa7408079c173910fe9b4bad1",
+  "message": "Prepared locally. No credentials were read; no HTTP request was sent."
+}

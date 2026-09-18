@@ -1,0 +1,25 @@
+{
+  "purpose": "Recorded HTTP request parameters and original prompt text for optional new runs. Hosted endpoints were not contacted in preparing this release.",
+  "sources": {
+    "simulation_source": {
+      "filename": "m_series_generation_v4(1).py",
+      "sha256": "95cfe51586148fc9a174ecd9985457f063ee97691fcc88a5094bca6c88fddce9"
+    },
+    "relevance_source": {
+      "filename": "relevance_eval_redacted.ipynb",
+      "sha256": "d3379f2b707a299d77214294f8f05e80732a192011250e4ec2e0857a23f33612"
+    },
+    "query_source": {
+      "filename": "06_double_reduction_policy_simulation_phaseD1_3A_full400_query_v8.ipynb",
+      "sha256": "8efc4face0b88958f3f8c661f34dda02c3e4aa2b1d6373bb0905c8d30eef8678"
+    },
+    "simulation_contract": {
+      "filename": "api_run_contract_v5.json",
+      "sha256": "d7d3ea1ed90546a6b2f9a02cba5b75675da5edc40d789e27e270c7cae83cb476"
+    },
+    "query_contract": {
+      "filename": "api_run_contract_v3.json",
+      "sha256": "fa7d660ca7f31074ec8ca6d3196c8a9f06022abe044caf681d31ff56765cb764"
+    }
+  }
+}

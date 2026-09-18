@@ -1,0 +1,14 @@
+【完整泛化画像】
+{profile_text}
+
+【已观测 canonical 字段】
+{observed_map}
+
+【本次允许的 concern axes】
+{allowed_concerns}
+
+【concern code 说明】
+{concern_descriptions}
+
+请生成 1 至 3 条 hypothetical retrieval probes。
+这些 Query 只用于检索相似的政策前教育留言，不代表该 Profile 已经真实表达过这些诉求。

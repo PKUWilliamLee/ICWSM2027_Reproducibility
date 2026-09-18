@@ -1,0 +1,8 @@
+# Exact environment used for the release verification in the sandbox.
+# This file is archival, not required for ordinary reproduction.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+statsmodels==0.14.6
+scikit-learn==1.8.0
+matplotlib==3.10.8

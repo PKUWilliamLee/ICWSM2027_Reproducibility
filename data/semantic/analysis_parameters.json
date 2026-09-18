@@ -1,0 +1,82 @@
+{
+  "BGE_model_id": "BAAI/bge-large-zh-v1.5",
+  "BGE_revision": "d7b4914a04f195eb4c1520d297963449e8720e95",
+  "M_star": "M1",
+  "N_star": 100,
+  "permutation": {
+    "horizon_scaling": "concatenate then divide by sqrt(5)",
+    "n_permutations": 10000,
+    "p_value_correction": "(1 + count(T_perm >= T_obs)) / (B + 1)",
+    "same_sign_across_5_horizons": true,
+    "seed": 20260816,
+    "sign_matrix_sha256": "1B6775438B684870C7EA5E82E029944D16BA1F377CF418F6F9139B472EA414BC",
+    "statistic": "L2 norm of weighted mean concatenated 5-horizon response-difference vector",
+    "type": "profile-clustered sign-flip"
+  },
+  "crossfit_direction": {
+    "folds": 5,
+    "heldout_profiles_per_fold": 20,
+    "scope": "full-policy temporal concatenated direction",
+    "seed": 20260816,
+    "train_profiles_per_fold": 80
+  },
+  "primary_contrasts": {
+    "information": {
+      "left": "P0",
+      "right": "P_NORM_ABC"
+    },
+    "necessity_A": {
+      "left": "P_ABC_MINUS_A_STATE",
+      "right": "P_ABC"
+    },
+    "necessity_B": {
+      "left": "P_ABC_MINUS_B_STATE",
+      "right": "P_ABC"
+    },
+    "necessity_C": {
+      "left": "P_ABC_MINUS_C_STATE",
+      "right": "P_ABC"
+    },
+    "state_given_information": {
+      "left": "P_NORM_ABC",
+      "right": "P_ABC"
+    },
+    "sufficiency_A": {
+      "left": "P0",
+      "right": "P_A_ONLY"
+    },
+    "sufficiency_B": {
+      "left": "P0",
+      "right": "P_B_ONLY"
+    },
+    "sufficiency_C": {
+      "left": "P0",
+      "right": "P_C_ONLY"
+    }
+  },
+  "horizons": [
+    0,
+    6,
+    12,
+    24,
+    36
+  ],
+  "scenarios": [
+    "P0",
+    "P_NORM_ABC",
+    "P_ABC",
+    "P_A_ONLY",
+    "P_B_ONLY",
+    "P_C_ONLY",
+    "P_ABC_MINUS_A_STATE",
+    "P_ABC_MINUS_B_STATE",
+    "P_ABC_MINUS_C_STATE"
+  ],
+  "multiple_testing": {
+    "full_policy_benchmark_not_in_FDR": true,
+    "primary": "BH-FDR across 8 primary contrasts",
+    "primary_alpha": 0.05,
+    "secondary": "BH-FDR across 40 horizon-specific primary-contrast tests"
+  },
+  "BGE_local_directory_manifest_sha256": "82ABB546905C198DFE69E870EA725334B6F23E6A7860478406C3CA2E35E06687"
+}

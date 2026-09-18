@@ -1,0 +1,33 @@
+{
+  "classifier": {
+    "rows_compared": 7,
+    "absolute_differences": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0.0
+    }
+  },
+  "relevance": {
+    "rows_compared": 6,
+    "absolute_differences": {
+      "n_total": 0.0,
+      "accuracy": 0.0,
+      "precision": 1.1102230246251565e-16,
+      "recall": 1.1102230246251565e-16,
+      "f1": 1.1102230246251565e-16,
+      "tn": 0.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "tp": 0.0,
+      "n_valid": 0.0,
+      "parse_failures": 0.0,
+      "avg_time_sec": 0.0,
+      "total_time_sec": 0.0,
+      "prompt_tokens": 0.0,
+      "completion_tokens": 0.0,
+      "total_tokens": 0.0
+    }
+  },
+  "latency_recomputed_from_request_rows": true
+}

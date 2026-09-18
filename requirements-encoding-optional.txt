@@ -1,0 +1,3 @@
+# Optional local text re-encoding, not required by reproduce_all.py.
+-r requirements-parquet-optional.txt
+sentence-transformers>=3.0,<6

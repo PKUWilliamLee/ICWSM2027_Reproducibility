@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "timezone": "UTC",
+  "documentation_revision": "2026-09-18",
+  "scope": "Timing provenance for retained study outputs; not an exhaustive billing log or an inventory of every pilot, failed attempt, or retry.",
+  "timestamp_policy": {
+    "request_fields": [
+      "started_at_utc",
+      "completed_at_utc"
+    ],
+    "artifact_fields": [
+      "created_at_utc"
+    ],
+    "simulation_horizon_is_execution_time": false,
+    "filesystem_upload_zip_times_used_as_call_times": false,
+    "missing_timestamp_policy": "Unknown values remain null. Artifact-creation times are labeled separately and are not substituted for request times."
+  },
+  "m_series": {
+    "model_as_recorded": "deepseek-v4-pro",
+    "logical_output_rows": 2000,
+    "unique_retained_requests": 2000,
+    "earliest_recorded_completion_utc": "2026-08-13T15:35:53.634834+00:00",
+    "latest_recorded_completion_utc": "2026-08-14T03:22:05.902532+00:00",
+    "earliest_directly_recorded_request_start_utc": null,
+    "completion_count_by_utc_date": {
+      "2026-08-13": 1958,
+      "2026-08-14": 42
+    },
+    "evidence_kind": "per_request_completion_timestamps",
+    "source_file": "m_series_generation_v4/m_series_api_log_v4.parquet",
+    "source_sha256": "5651e13cb273c0c0d79eb5e2a9c3466b3e419fde40412070d7e1e8626aebf889",
+    "source_archive_sha256": "e7726060ff4befc442ff4603edc0a7e1b4aa3b90264db8313f9aec06f6200712",
+    "matched_output_file": "data/frozen_api_outputs/m_series_synthetic_v4.parquet",
+    "matched_output_sha256": "da410e873cd4ecd51f841b52009a964b540ec35ca8f25c1df856470752c6a306",
+    "all_output_request_hashes_matched": true,
+    "timing_extract": "docs/provenance/m_series_response_times.csv",
+    "timing_extract_sha256": "2b2918be0887187d4ba3b2a1a6e0fe3dd6191022db77a13dff68de2bc0bb89d1",
+    "limitations": "The exported API log retains completion times and elapsed durations, but no separate request-start field. The first completion is not reported as the experiment start."
+  },
+  "p1_convergence": {
+    "model_as_recorded": "deepseek-v4-pro",
+    "logical_output_rows_N200": 2000,
+    "unique_retained_requests": 1600,
+    "earliest_recorded_start_utc": "2026-08-15T11:57:14.629852+00:00",
+    "latest_recorded_completion_utc": "2026-08-15T13:20:19.163654+00:00",
+    "evidence_kind": "per_request_start_and_completion_timestamps",
+    "source": "p1_n_convergence_v1/api_cache/*/*.json, matched to the N200 frozen request plan and output",
+    "source_archive_sha256": "e821b0b2df997b1d4aa528b5c350fc24ed7c69134c619b79b21ddde01ac4f206",
+    "matched_output_file": "data/frozen_api_outputs/p1_convergence_synthetic_N200_v1.parquet",
+    "matched_output_sha256": "9fbb1b8346b4f608d4b392065b79c463e95099c3459e735e90f47ff605b0ae4b",
+    "all_output_request_hashes_matched": true,
+    "nested_cohort_windows": [
+      {
+        "profiles": 50,
+        "logical_rows": 500,
+        "unique_retained_requests": 400,
+        "earliest_start_utc": "2026-08-15T11:57:14.629852+00:00",
+        "latest_completion_utc": "2026-08-15T12:14:00.682750+00:00"
+      },
+      {
+        "profiles": 100,
+        "logical_rows": 1000,
+        "unique_retained_requests": 800,
+        "earliest_start_utc": "2026-08-15T11:57:14.629852+00:00",
+        "latest_completion_utc": "2026-08-15T12:30:43.164630+00:00"
+      },
+      {
+        "profiles": 200,
+        "logical_rows": 2000,
+        "unique_retained_requests": 1600,
+        "earliest_start_utc": "2026-08-15T11:57:14.629852+00:00",
+        "latest_completion_utc": "2026-08-15T13:20:19.163654+00:00"
+      }
+    ],
+    "timing_extract": "docs/provenance/p1_retained_request_times.csv",
+    "timing_extract_sha256": "2b118c62c05976b71b7edec95a3fcb21187c8615d947001753a5c7ab1f8d2395",
+    "limitations": "Successful retained cache records only. The window spans incremental stages and idle time; it is not continuous provider compute time, and earlier failed attempts may fall outside it."
+  },
+  "p2_final_policy_scenarios": {
+    "model_as_recorded": "deepseek-v4-pro",
+    "logical_output_rows": 4500,
+    "unique_request_hashes": 3644,
+    "logical_rows_using_p1_cache": 1656,
+    "unique_p1_cache_requests": 800,
+    "p1_cache_earliest_recorded_start_utc": "2026-08-15T11:57:14.629852+00:00",
+    "p1_cache_latest_recorded_completion_utc": "2026-08-15T12:30:43.164630+00:00",
+    "additional_unique_p2_requests": 2844,
+    "additional_p2_request_start_utc": null,
+    "additional_p2_request_completion_utc": null,
+    "artifact_frozen_at_utc": "2026-08-16T05:12:36.802805+00:00",
+    "freeze_evidence": "p2_generation_freeze_contract_v1.json: created_at_utc",
+    "freeze_contract_sha256": "90c931e462835338b20c5f7a240802bc391838f75d481c948a586485c7e6ca2f",
+    "matched_output_sha256": "efb513ab761316fbf8b50c141bff541acb4325106dd93abbff2aed4af738f171",
+    "source_index": "data/frozen_api_outputs/p2_full9_source_index_N100_v1.csv",
+    "source_index_sha256": "13c79c3d61dd9336be6dd500e97375f7e7e1f57fcaf3ccbb78f19b2eb8cb2ee5",
+    "evidence_kind": "partial_per_request_timing_plus_final_artifact_freeze",
+    "limitations": "P2 exports and executed notebooks examined do not retain per-request calendar times for the additional P2 requests. The final freeze certifies that the artifact existed by this time; it is not the last API-call time."
+  },
+  "profile_query_generation": {
+    "model_as_recorded": "deepseek-v4-flash",
+    "profiles": 400,
+    "query_rows": 1200,
+    "imported_pilot_profiles": 30,
+    "additional_profiles": 370,
+    "request_start_utc": null,
+    "request_completion_utc": null,
+    "artifact_recorded_at_utc": "2026-08-12T09:03:59.252107+00:00",
+    "evidence_kind": "profile_memory_bundle_manifest_timestamp_only",
+    "source": "D1.3B bundle manifest (manifest(1).json): created_at_utc and files.queries.sha256",
+    "query_file": "queries_400_v8.parquet",
+    "query_file_sha256": "2e769455cd8edbd38ac90a852992aef6f5c20665f1d86948f649f8da928c5814",
+    "limitations": "The query output matches the manifest hash. It contains 30 imported pilot query sets and 370 additional sets; it has no per-request timestamps. The bundle manifest time does not date all API calls."
+  },
+  "relevance_screening": {
+    "evaluation_rows": 6000,
+    "configurations": 6,
+    "request_start_utc": null,
+    "request_completion_utc": null,
+    "evidence_kind": "saved_predictions_and_elapsed_durations_without_calendar_timestamps",
+    "elapsed_field": "elapsed_sec",
+    "parse_status_field": "parsed_ok",
+    "limitations": "Per-call elapsed seconds can reproduce the historical benchmark latency, but do not establish a calendar execution date. Dates for the separate full-corpus screening run are also not established by the verified records. File/backup/log filenames and modification times are not used to infer them."
+  },
+  "p3_statistics": {
+    "hosted_generative_api_calls": 0,
+    "note": "Local text encoding/statistical evaluation; analysis and freeze timestamps are not new hosted LLM request times."
+  }
+}

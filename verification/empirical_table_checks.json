@@ -1,0 +1,23 @@
+{
+  "annual_from_monthly_counts": {
+    "rows_compared": 15,
+    "absolute_differences": {
+      "Schoolwork Burden": 8.326672684688674e-17,
+      "Shadow Education": 8.326672684688674e-17,
+      "Refund Disputes": 9.93129189996722e-17,
+      "After-school Services": 8.673617379884035e-17,
+      "Family Pressure": 8.326672684688674e-17,
+      "Student Well-being": 6.938893903907228e-17,
+      "Admissions Equity": 5.551115123125783e-17
+    }
+  },
+  "table11": {
+    "rows_compared": 49,
+    "absolute_differences": {
+      "effect_24m_pp": 1.900701818158268e-13,
+      "ci_low_24m_pp": 9.308109838457312e-13,
+      "ci_high_24m_pp": 9.698908343125368e-13
+    }
+  },
+  "cooccurrence_starting_level": "Released aggregated edge shares; no message-level recount"
+}
